@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Friday Deal Finder 2026 — real deals, honestly checked</title>
+<meta name="description" content="28 Black Friday and Cyber Monday deals, each checked against its store on 27 Nov 2026, with an honest verdict on whether it is really a deal.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="kicker">Black Friday · 27 Nov 2026 — Cyber Monday · 30 Nov 2026</p>
+  <h1>Black Friday Deal Finder</h1>
+  <p class="sub">Real deals, checked against the stores — with an honest verdict on every one. A small discount on something you wanted anyway is not a doorbuster, and this finder says so.</p>
+</header>
+
+<section class="controls" aria-label="Search and filter deals">
+  <input id="q" type="search" placeholder="Search a product, store or category…" aria-label="Search deals">
+  <label>Category
+    <select id="category" aria-label="Filter by category"></select>
+  </label>
+  <label>Store
+    <select id="store" aria-label="Filter by store"></select>
+  </label>
+  <label>Min. discount
+    <select id="min-discount" aria-label="Minimum discount">
+      <option value="0">Any discount</option>
+      <option value="15">15% off or more</option>
+      <option value="30">30% off or more</option>
+      <option value="50">50% off or more</option>
+    </select>
+  </label>
+  <label>Verdict
+    <select id="verdict" aria-label="Filter by verdict">
+      <option value="All">Any verdict</option>
+      <option value="real">Real deal</option>
+      <option value="good">Good deal</option>
+      <option value="fair">Fair deal</option>
+      <option value="weak">Weak deal</option>
+    </select>
+  </label>
+  <label>Sort by
+    <select id="sort" aria-label="Sort deals">
+      <option value="discount">Biggest discount</option>
+      <option value="saving">Biggest saving ($)</option>
+      <option value="priceAsc">Lowest price</option>
+      <option value="priceDesc">Highest price</option>
+      <option value="name">Name A–Z</option>
+    </select>
+  </label>
+</section>
+
+<main id="app" aria-live="polite"></main>
+
+<footer>
+  <h2>How these deals were checked</h2>
+  <p>Every price on this page was reported by a named public source — a retailer announcement, a deals tracker (Tom's Guide / TechRadar, 9to5Toys), or a Black Friday ad scan — and checked on <strong>27 November 2026</strong>. Each deal card names its source and its store, and links to the store's own search page for that product, so you can confirm the price before you buy. Prices move fast on Black Friday weekend and stock runs out; the store's page is the final word.</p>
+  <p>The verdict is computed from the numbers: 50%+ off is a <strong>real deal</strong>, 30–49% a <strong>good deal</strong>, 15–29% a <strong>fair deal</strong>, under 15% a <strong>weak deal</strong>. A “lowest tracked” tag means the source called it the lowest price it had seen for that product. No deal here was invented, and no price is from an earlier sale.</p>
+  <p class="fine">Black Friday Deal Finder — an independent finder built for make.fun's Black Friday bounty. Not affiliated with Amazon, Best Buy, Walmart, Target, B&amp;H Photo, or any brand named here. Prices in US dollars.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="filters.js"></script>
+<script src="views.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
